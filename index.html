@@ -7,8 +7,9 @@
 </head>
 <body>
     <form>
-        <label for="text-input">Text:</label>
-        <input type="text" id="text-input" name="text-input"><br>
+        <!--phone number & iban-->
+        <label for="phone-input">Text:</label>
+        <input type="text" id="text-input" name="text-input" required pattern="^(\+36|06)(\s|-)?(29|30|31|70)(\s|-)?\d{7}$"><br>
         
         <label for="email-input">Email:</label>
         <input type="email" id="email-input" name="email-input"><br>
