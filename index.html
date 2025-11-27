@@ -2,17 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" keywords="skibidi">
+    <title>Git Regex feladat</title>
 </head>
 <body>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:40px;
+        }
+    </style>
     <form>
+
         <label for="Imei-input">Imei:</label>
         <input type="Imei" id="Imei-input" name="Imei-input" required pattern = "^\d{15}$"><br>
         
         <label for="Name-input">Name:</label>
         <input type="Name" id="Name-input" name="Name-input" required pattern = "^[a-zA-Z ]{1,567}$"><br>
         
+        <!--phone number & iban-->
+        <label for="phone-input">Enter your phone number:</label>
+        <input type="phone" id="phone-input" name="phone-input" required pattern="^(\+36|06)(\s|-)?(29|30|31|70)(\s|-)?\d{7}$"><br>
+        <br>
+        <label for="iban-input">Enter your IBAN:</label>
+        <input type="iban" id="iban-input" name="iban-input"><br>
+        <br>
+
         <button type="submit">Submit</button>
     </form>  
 </body>
