@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" keywords="skibidi">
+    <title>Git Regex feladat</title>
 </head>
 <body>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:40px;
+        }
+    </style>
     <form>
         <!--phone number & iban-->
-        <label for="phone-input">Text:</label>
-        <input type="text" id="text-input" name="text-input" required pattern="^(\+36|06)(\s|-)?(29|30|31|70)(\s|-)?\d{7}$"><br>
-        
-        <label for="email-input">Email:</label>
-        <input type="email" id="email-input" name="email-input"><br>
-        
-        <label for="password-input">Password:</label>
-        <input type="password" id="password-input" name="password-input"><br>
-        
+        <label for="phone-input">Enter your phone number:</label>
+        <input type="phone" id="phone-input" name="phone-input" required pattern="^(\+36|06)(\s|-)?(29|30|31|70)(\s|-)?\d{7}$"><br>
+        <br>
+        <label for="iban-input">Enter your IBAN:</label>
+        <input type="iban" id="iban-input" name="iban-input"><br>
+        <br>
         <button type="submit">Submit</button>
     </form>  
 </body>
