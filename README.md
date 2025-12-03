@@ -1,0 +1,1 @@
+A feladat egy olyan alkalmazás elkészítése ami képes bekérni egy html form-ról adatokat, amiket formailag kliensoldalon validálunk regex segitségével, szerver oldalon pedig ismét ellenőrrizük ugyanazokkal a minta illesztéskkel! 
