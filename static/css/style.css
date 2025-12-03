@@ -1,0 +1,7 @@
+/*Only centers the text, need to style later () !!!!*/
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}

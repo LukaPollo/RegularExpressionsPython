@@ -1,0 +1,10 @@
+import re
+
+EMAIL_REGEX = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"
+HUNGARIAN_PHONE_REGEX = r"^(\+36|06)(\s|-)?(29|30|31|70)(\s|-)?\d{7}$"
+PERSON_NAME_REGEX = r"^[a-zA-Z ]{1,567}$"
+IMEI_REGEX = r"^\d{15}$"
+IBAN_REGEX = r"^HU\d{2}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}$"
+UUID_REGEX = r"^[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}$"
+ISBN_REGEX = r"\d{3}([- ]?\d+){3}[- ]?\d"
+URL_REGEX = r""

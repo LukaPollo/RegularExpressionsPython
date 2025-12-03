@@ -1,0 +1,4 @@
+-isbn and url regex fix html and validator.py side
+-flask_app_regex still empty
+-after flask_app_regex is done regex_flask_test.py needs to have unittests
+-later after all the unittests and everything works css 
