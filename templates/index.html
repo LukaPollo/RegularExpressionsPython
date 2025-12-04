@@ -5,40 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" keywords="skibidi"
     author="wellwellwell">
     <title>Git Regex feladat</title>
-    <link rel="shortcut icon" href="/static/images/Screenshot 2025-12-03 231848.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <form method="POST" action="/">
+    <div style="background: red; color: white; padding: 10px; margin: 0;">
+        {{ errors }}
+    </div>
+    <form method="POST" action="/submit">
         <label for="email-input">Enter your email address:</label>
-        <input type="email" id="email-input" name="email-input" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"><br>
+        <input type="email" id="email-input" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" placeholder="something@gmail.com"><br>
         <br>
         <label for="Imei-input">Enter your Imei:</label>
-        <input type="text" id="Imei-input" name="Imei-input" required pattern = "^\d{15}$"><br>
+        <input type="text" id="Imei-input" name="imei" required pattern = "^\d{15}$" placeholder="123456789012345"><br>
         <br>
         <label for="Name-input">Enter your name:</label>
-        <input type="text" id="Name-input" name="Name-input" required pattern = "^[a-zA-Z ]{1,567}$"><br>
+        <input type="text" id="Name-input" name="name" required pattern = "^[a-zA-Z ]{1,567}$" placeholder="Luka Podiashvili"><br>
         <br>
-        <!--phone number & iban-->
         <label for="phone-input">Enter your phone number:</label>
-        <input type="tel" id="phone-input" name="phone-input" required pattern="^(\+36|06)(\s|-)?(29|30|31|70)(\s|-)?\d{7}$"><br>
+        <input type="tel" id="phone-input" name="phone" required pattern="^(\+36|06)(\s|-)?( 29|30|31|70)(\s|-)?\d{7}$" placeholder="06 70 4040342"><br>
         <br>
         <label for="iban-input">Enter your IBAN:</label>
-        <input type="text" id="iban-input" name="iban-input" required pattern="^HU\d{2}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}$"><br>
+        <input type="text" id="iban-input" name="iban" required pattern="^HU\d{2}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}(\s|-)?\d{4}$" placeholder="HU42117730161111101800000000"><br>
         <br>
         <label for="uuid-input">Enter your UUID (Universally unique identifier):</label>
-        <input type="text" id="uuid-input" name="uuid-input" required pattern="^[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}$"><br>
+        <input type="text" id="uuid-input" name="uuid" required pattern="^[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}$" placeholder="48018487-4f77-4eaa-baaf-a929bb52a66a"><br>
         <br>
-        <!--WTF IS THIS SHIT not working idk it keeps submitting with invalid numbers :( )-->
         <label for="isbn-input">Enter your ISBN (International Standard Book Number):</label>
-        <input type="text" id="isbn-input" name="isbn-input" required pattern="\d{3}([- ]?\d+){3}[- ]?\d">
-        <!--DONT UNDERSTAND fix later-->
-        <!-- <label for="url-input">Enter a valid URL:</label>
-        <input type="url" id="url-input" name="url-input" required pattern="#"><br>
-        -->
+        <input type="text" id="isbn-input" name="isbn" required pattern="97[89]-[0-9-]+-[0-9-]+-[0-9-]+-[0-9]" placeholder="978-0-439-02348-1"><br>
+        <br>
+        <label for="url-input">Enter a valid URL:</label>
+        <input type="url" id="url-input" name="url" required pattern="^(?:https?|wss?|ftp)://[A-Za-z0-9.-]+(?::\d{1,5})?(?:/[^\s]*)?$" placeholder="https://example.com"><br>
+       
         <br>
         <br>
         <button type="submit">Submit</button>
-    </form>  
-</body>
+    </body>
 </html>

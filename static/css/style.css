@@ -1,7 +1,41 @@
-/*Only centers the text, need to style later () !!!!*/
 body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:40px;
-}
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: navy;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 20px;
+            padding: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4b36aa;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            left:40%;
+        }
+        button:hover {
+            background-color: #5312bb;
+        }
