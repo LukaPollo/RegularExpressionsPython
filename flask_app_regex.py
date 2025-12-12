@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request
 from regex_constants import *
 from validator import *
+import json
 
 app = Flask(__name__)
+
+inputs = []
 
 #error messages grouped nicely :)
 fields = [
@@ -40,8 +43,10 @@ def submit_form():
             errors=error_messages,
         )
 
-    return render_template("end.html")
+    with open('data.json', 'w') as f:
+        json.dump(submitted, f, indent=4)
 
+    return render_template("end.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
